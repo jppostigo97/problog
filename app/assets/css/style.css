@@ -1,0 +1,286 @@
+body {
+	background: #F3F3F3;
+	color: #181818;
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+#wrapper {
+	margin: 0px 6px;
+	margin-top: 10px !important;
+}
+
+a {
+	color: rgb(30, 70, 180);
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: rgb(70, 70, 255);
+}
+
+.dialog {
+	display: none;
+}
+
+textarea {
+	resize: none;
+}
+
+form .form-field {
+	margin-bottom: 10px !important;
+}
+
+#navbar {
+	background: #181818;
+	color: #F3F3F3;
+	display: grid;
+	grid-template-columns: 154px 1fr;
+}
+
+#navbar a i, #navbar a span { display: inline-block; }
+
+#navbar a {
+	color: inherit;
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding: 10px 20px;
+	text-align: center;
+	
+	transition: 0.25s linear background;
+}
+
+#navbar #menu {
+	text-align: right;
+}
+
+#navbar #menu a span {
+	display: none;
+}
+
+#navbar a:hover, #navbar a:active {
+	background: #282828;
+	text-decoration: none;
+}
+
+#login-toggle {
+	cursor: pointer;
+}
+
+#session-content {
+	background: #424242;
+	color: #D3D3D3;
+	display: none;
+	position: absolute;
+	right: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+#session-content > div {
+	display: flex;
+	flex-direction: column;
+}
+
+#session-error {
+	background: rgba(230, 100, 100, 0.4);
+	border: 2px solid rgba(200, 70, 70, 0.8);
+	border-radius: 10px;
+	color: #F3F3F3;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 16px 32px;
+	width: 80%;
+}
+
+#session-error .error-title {
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+#session-forms {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+#session-forms>div, #session-forms>form {
+	margin: 10px 20px;
+}
+
+#session-forms form {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+#session-forms form .form-field {
+	display: flex;
+	flex-direction: column;
+}
+
+#session-forms form h3 {
+	margin-top: 0px;
+}
+
+#wrapper form {
+	display: flex;
+	flex-direction: column;
+}
+
+#wrapper form .form-field {
+	display: flex;
+	flex-direction: column;
+}
+
+#user-profile #user-contact a {
+	display: block;
+}
+
+#post-list a {
+	color: rgb(40, 80, 160);
+	
+	transition: 0.25s linear color;
+}
+
+#post-list a:hover, #post-list a:active {
+	color: rgb(20, 70, 250);
+	text-decoration: none;
+}
+
+.post-pagination ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.post-pagination ul li {
+	display: inline-block;
+	margin: 16px 20px 16px 0px;
+}
+
+.post-pagination ul li a {
+	background: rgba(100, 100, 100, 0.15);
+	border-radius: 50%;
+	display: block;
+	padding: 20px 16px;
+}
+
+#post>h1 {
+	margin-bottom: 26px;
+}
+
+#post #post-info {
+	margin: 24px 0px;
+}
+
+#comment-form h4 {
+	margin-bottom: 12px;
+	margin-top: 28px;
+}
+
+#post-comment-list h3 {
+	margin-bottom: 18px;
+	margin-top: 30px;
+}
+
+.comment {
+	background: rgba(160, 160, 220, 0.1);
+	margin: 12px 0px;
+	padding: 6px 10px;
+}
+
+.comment .comment-content {
+	background: rgba(60, 60, 140, 0.1);
+	border-radius: 6px;
+	margin: 0px 6px 6px 0px;
+	padding: 6px 20px;
+}
+
+.comment .comment-info {
+	margin: 0px 0px 4px 2px;
+}
+
+.admin-panel table {
+	width: 100%;
+}
+
+.admin-panel table th, .admin-panel table td {
+	text-align: center;
+}
+
+.admin-panel table input {
+	width: 100%;
+}
+
+#admin-menu {
+	margin-bottom: 30px;
+}
+
+#admin-menu ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	list-style: none;
+	padding-left: 0;
+	text-align: center !important;
+}
+
+#admin-menu ul li a {
+	padding: 10px 18px;
+}
+
+#admin-menu ul li a span:not(.fa-li) {
+	display: none;
+}
+
+@media screen and (min-width: 480px) {
+	#session-forms {
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	#session-content {
+		border-bottom-left-radius: 20px;
+		width: 460px;
+	}
+	
+	#navbar #menu a>i {
+		display: none;
+	}
+	
+	#navbar #menu a span {
+		display: initial;
+	}
+	
+	#admin-menu ul li a>i {
+		display: none;
+	}
+	
+	#admin-menu ul li a span:not(.fa-li) {
+		display: initial;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	#wrapper {
+		margin: 0 auto;
+		max-width: 900px;
+	}
+
+	#user-profile #user-info {
+		display: grid;
+		grid-template-areas: "n c"
+							"b c";
+	}
+
+	#user-info #user-username { grid-area: n; }
+	#user-info #user-bio { grid-area: b; }
+	#user-profile #user-contact { grid-area: c; }
+}
+
+@media screen and (min-width: 1200px) {
+	#wrapper {
+		max-width: 1160px;
+	}
+}
