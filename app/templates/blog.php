@@ -18,15 +18,15 @@
 		<div id="menu">
 			<?php
 				if (Config::is_user_logged()):
+					Application::link_to("blog/write_post",
+						"<i class=\"fas fa-lg fa-fw fa-edit\"></i>" .
+						"<span> Escribir un post</span>");
 					if ($_SESSION["level"] > 3):
 						if ($_SESSION["level"] > 4):
 							Application::link_to("admin",
 								"<i class=\"fas fa-lg fa-fw fa-certificate\"></i>" .
 								"<span> Administrar</span>");
 						endif;
-						Application::link_to("blog/write_post",
-							"<i class=\"fas fa-lg fa-fw fa-edit\"></i>" .
-							"<span> Escribir un post</span>");
 					endif;
 					Application::link_to("blog/logout",
 						"<i class=\"fas fa-lg fa-fw fa-times\"></i><span> Salir</span>");
@@ -84,5 +84,9 @@
 			[[ skrcontent ]]
 		</div>
 	</div>
+	<footer>
+		Copyright &copy; Juan Pedro Postigo<br />
+		Proyecto D.A.W.
+	</footer>
 </body>
 </html>

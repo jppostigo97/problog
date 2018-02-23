@@ -1,6 +1,7 @@
 <?php
 	class PostController extends Controller {
 		public function show($id = 0) {
+			require_once "Parsedown.php";
 			$post = (Application::load_model("post"))->find(intval($id));
 			
 			if ($post) {
@@ -13,7 +14,7 @@
 				$category = ($post->category)?
 					(Application::load_model("category"))->find($post->category)->label : "sin categoria";
 				
-				$parsedown = Application::load_helper("Parsedown");
+				$parsedown = new Parsedown();
 				
 				View::template("blog");
 				View::load("post/show", [

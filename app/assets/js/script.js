@@ -1,5 +1,5 @@
 // TODO: change if uploaded to any host
-const APP_PATH = "http://" + window.location.hostname + "/problog/";
+const APP_PATH = "https://jppostigo97.000webhostapp.com/";
 
 function displayError(id, title, content) {
 	$("#" + id).html(

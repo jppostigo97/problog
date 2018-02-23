@@ -105,7 +105,8 @@
 		 * @return string Encoded string.
 		 */
 		static public function encode ($string) {
-			$tc = new mysqli(Config::db_host, Config::db_name, Config::db_pass);
+			$tc = new mysqli(Config::db_host, Config::db_user,
+				Config::db_pass, Config::db_name);
 			$encoded_string = $tc->real_escape_string($string);
 			$tc->close();
 			return $encoded_string;

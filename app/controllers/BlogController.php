@@ -34,8 +34,6 @@
 		
 		public function write_post() {
 			Application::require_login();
-			if ($_SESSION["level"] <= 3) Application::force_redirect("");
-			
 			Application::title("Escribiendo...");
 			
 			$p_title    = isset($_POST["post_title"])? $_POST["post_title"] : "";

@@ -15,9 +15,9 @@
 		const time_format      = "H:i";
 		const date_time_format = "d/m/y - H:i";
 		const db_host          = "localhost";
-		const db_name          = "problog";
-		const db_user          = "root";
-		const db_pass          = "";
+		const db_name          = "id4849983_problog";
+		const db_user          = "id4849983_root";
+		const db_pass          = "elusuarioroot";
 		const controller_path  = "app/controllers/";
 		const helper_path      = "app/helpers/";
 		const model_path       = "app/models/";

@@ -233,6 +233,11 @@ form .form-field {
 	display: none;
 }
 
+footer {
+	font-family: monospace;
+	text-align: center;
+}
+
 @media screen and (min-width: 480px) {
 	#session-forms {
 		flex-direction: row;

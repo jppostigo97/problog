@@ -22,4 +22,33 @@ Problog utiliza también una librería llamada [Parsedown](http://parsedown.org)
 El *routing* de problog se ayuda del archivo *.htaccess*, el cual es un archivo propio de los servidores Apache.
 
 
-## Work In Progress (WIP)
+# Acceso de prueba a la aplicación
+
+Además de mi usuario personal, puedes acceder y probar la aplicación accediendo con las siguientes credenciales:
+
+- **Usuario**: randomizado
+- **Contraseña**: randomsolo
+
+# Capturas de pantalla (versión móvil)
+
+![Página principal](screenshots/1.png)
+Página principal
+
+![Página principal (autenticado)](screenshots/2.png)
+Página principal (autenticado)
+
+![Formulario de publicación](screenshots/3.png)
+Formulario de publicación
+
+![Vista de post](screenshots/4.png)
+Vista de post
+
+![Vista del perfil de un usuario](screenshots/5.png)
+Vista del perfil de un usuario.
+Aclarar que el icono del lápiz azul permite editar al usuario. Dicha funcionalidad solo está permitida para que los moderadores editen usuarios de menor rango y cada usuario se edite a sí mismo.
+
+![Panel de administración (categorías)](screenshots/6.png)
+Panel de administración (categorías). Similar a las otras tres secciones del panel de administración.
+
+![Botones de paginación y footer](screenshots/7.png)
+Botones de paginación y footer
